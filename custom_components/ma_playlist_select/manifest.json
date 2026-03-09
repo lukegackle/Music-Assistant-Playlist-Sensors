@@ -1,0 +1,11 @@
+{
+  "domain": "ma_playlist_select",
+  "name": "Music Assistant Playlist Sensors",
+  "version": "2.0.0",
+  "codeowners": [],
+  "requirements": [],
+  "dependencies": ["music_assistant"],
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "documentation": ""
+}

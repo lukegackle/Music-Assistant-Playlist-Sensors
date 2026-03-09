@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Music Assistant Playlist Sensors",
+        "description": "Select your Music Assistant instance and configure how playlists are fetched.",
+        "data": {
+          "config_entry_id": "Music Assistant Instance",
+          "scan_interval": "Refresh interval (seconds)",
+          "favorite_only": "Favorites only"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This Music Assistant instance is already configured.",
+      "no_music_assistant": "No Music Assistant integration found. Please set up Music Assistant first."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Music Assistant Playlist Options",
+        "data": {
+          "scan_interval": "Refresh interval (seconds)",
+          "favorite_only": "Favorites only"
+        }
+      }
+    }
+  }
+}

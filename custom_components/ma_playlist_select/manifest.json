@@ -1,7 +1,7 @@
 {
   "domain": "ma_playlist_select",
   "name": "Music Assistant Playlist Sensors",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "codeowners": [],
   "requirements": [],
   "dependencies": ["music_assistant"],

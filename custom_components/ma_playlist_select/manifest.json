@@ -5,11 +5,11 @@
     "@lukegackle"
   ],
   "config_flow": true,
+  "dependencies": ["music_assistant"],
   "documentation": "https://github.com/lukegackle/Music-Assistant-Playlist-Sensors",
   "integration_type": "hub",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/lukegackle/Music-Assistant-Playlist-Sensors/issues",
   "requirements": [],
   "version": "1.0.1",
-  "dependencies": ["music_assistant"]
 }

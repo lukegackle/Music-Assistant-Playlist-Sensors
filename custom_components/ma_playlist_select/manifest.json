@@ -1,11 +1,15 @@
 {
   "domain": "ma_playlist_select",
   "name": "Music Assistant Playlist Sensors",
-  "version": "1.0.1",
-  "codeowners": [],
-  "requirements": [],
-  "dependencies": ["music_assistant"],
-  "iot_class": "local_polling",
+  "codeowners": [
+    "@lukegackle"
+  ],
   "config_flow": true,
-  "documentation": ""
+  "documentation": "https://github.com/lukegackle/Music-Assistant-Playlist-Sensors",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/lukegackle/Music-Assistant-Playlist-Sensors/issues",
+  "requirements": [],
+  "version": "1.0.1",
+  "dependencies": ["music_assistant"]
 }

@@ -102,7 +102,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
             if event.data.get("component") == "music_assistant":
                 hass.async_create_task(_initial_fetch())
 
-        hass.bus.async_listen(EVENT_COMPONENT_LOADED, _on_component_loaded)
+        entry.async_on_unload(
+            hass.bus.async_listen(EVENT_COMPONENT_LOADED, _on_component_loaded)
+        )
 
     # Re-init if options are changed via the UI
     entry.async_on_unload(entry.add_update_listener(_async_update_options))

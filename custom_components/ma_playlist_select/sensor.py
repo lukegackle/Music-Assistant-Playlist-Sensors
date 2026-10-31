@@ -59,7 +59,7 @@ async def async_setup_entry(
             async_add_entities(new_entities, True)
 
     _create_new_entities()
-    coordinator.async_add_listener(_create_new_entities)
+    entry.async_on_unload(coordinator.async_add_listener(_create_new_entities))
 
 
 class MAPlaylistSensor(CoordinatorEntity, SensorEntity):
@@ -80,14 +80,6 @@ class MAPlaylistSensor(CoordinatorEntity, SensorEntity):
             if _slug(item.get("name", "")) == self._slug:
                 return item
         return None
-
-    @property
-    def entity_id(self) -> str:
-        return f"sensor.musicassistant_playlist_{self._slug}"
-
-    @entity_id.setter
-    def entity_id(self, value: str) -> None:
-        pass
 
     @property
     def native_value(self) -> str | None:

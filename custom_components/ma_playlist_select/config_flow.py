@@ -71,17 +71,15 @@ class MAPlaylistConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     @staticmethod
     @callback
-    def async_get_options_flow(config_entry):
+    def async_get_options_flow(
+        config_entry: config_entries.ConfigEntry,
+    ) -> MAPlaylistOptionsFlow:
         """Return the options flow handler."""
-        return MAPlaylistOptionsFlow(config_entry)
+        return MAPlaylistOptionsFlow()
 
 
 class MAPlaylistOptionsFlow(config_entries.OptionsFlow):
     """Handle options (edit after setup) flow."""
-
-    def __init__(self, config_entry: config_entries.ConfigEntry) -> None:
-        """Initialise the options flow."""
-        self.config_entry = config_entry
 
     async def async_step_init(
         self, user_input: dict[str, Any] | None = None

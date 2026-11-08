@@ -2,6 +2,8 @@
 
 A custom Home Assistant integration that creates sensor entities for every playlist in your [Music Assistant](https://music-assistant.io/) library, making playlist data available across automations, dashboards, and template selects.
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=lukegackle&repository=Music-Assistant-Playlist-Sensors&category=integration)
+
 ---
 
 ## What It Does
@@ -49,7 +51,11 @@ The state of each sensor is the **playlist name**.
 ---
 
 ## Installation
+Music Assistant Playlist sensors is available on the Home Assistant Marketplace:
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=lukegackle&repository=Music-Assistant-Playlist-Sensors&category=integration)
+
+### Manual Install
 1. Copy the `ma_playlist_select` folder into your HA `custom_components` directory:
 
 ```
